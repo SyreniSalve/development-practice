@@ -1,0 +1,20 @@
+{
+  "name": "development-practice",
+  "version": "1.0.0",
+  "description": "Practical work to master:\r - JavaScript\r - TypeScript\r - HTML\r - CSS\r - NodeJS, npm",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --es-module-specifier-resolution=node",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SyreniSalve/development-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SyreniSalve/development-practice/issues"
+  },
+  "homepage": "https://github.com/SyreniSalve/development-practice#readme"
+}
