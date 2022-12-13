@@ -1,0 +1,1 @@
+console.log('first', 'first', 'first', /* some comment */'second', 'second', 'second', /* another comment */'third','third','third');
