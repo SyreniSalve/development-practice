@@ -1,4 +1,3 @@
+let title = 'DevMentor';
 const extension = '.online'
-let title = 'DevMentor'+ extension
-
-console.log(title);
+console.log(title + extension);
