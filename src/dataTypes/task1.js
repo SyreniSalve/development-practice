@@ -1,13 +1,13 @@
-const integerType = 1;
-const floatType = 2.2;
-const booleanType = true;
+const numberType = 1;
+const bigIntType = 1234567890123456789012345678901234n;
 const stringType = 'Hello';
-const charType = 'g';
-const unknownType = null;
+const booleanType = true;
+const nullType = null;
+let undefinedType;
 
-console.log(`Initial value: ${integerType}, variable type: ${typeof integerType}`);
-console.log(`Initial value: ${floatType}, variable type: ${typeof floatType}`);
+console.log(`Initial value: ${numberType}, variable type: ${typeof numberType}`);
+console.log(`Initial value: ${bigIntType}, variable type: ${typeof bigIntType}`);
 console.log(`Initial value: ${booleanType}, variable type: ${typeof booleanType}`);
 console.log(`Initial value: ${stringType}, variable type: ${typeof stringType}`);
-console.log(`Initial value: ${charType}, variable type: ${typeof charType}`);
-console.log(`Initial value: ${unknownType}, variable type: ${typeof unknownType}`);
+console.log(`Initial value: ${nullType}, variable type: ${typeof nullType}`);
+console.log(`Initial value: ${undefinedType}, variable type: ${typeof undefinedType}`);
