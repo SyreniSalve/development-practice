@@ -1,0 +1,1 @@
+console.log('first'); console.log('first'); console.log('first'); /* some comment */ console.log('second'); console.log('second'); console.log('second'); /* another comment */ console.log('third'); console.log('third'); console.log('third');  
