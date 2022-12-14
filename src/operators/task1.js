@@ -5,5 +5,5 @@ let b = 10
 b **= 3
 console.log(b);
 
-const result = 1 + '2' + 3 + true;
+const result = 1 + '2' - 3 + true;
 console.log(result);
