@@ -1,10 +1,10 @@
-console.log(1,
-2,
-3,
+console.log(
+
+
 4,
-5,
-6,
+
 '7th line',
-8,
+
 true,
-10);
+
+);

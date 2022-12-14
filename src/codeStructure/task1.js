@@ -1,1 +1,1 @@
-console.log('first', 'first', 'first', /* some comment */'second', 'second', 'second', /* another comment */'third','third','third');
+console.log('first', 'first', 'first'); /* some comment */ console.log('second', 'second', 'second'); /* another comment */ console.log('third', 'third', 'third'); 
