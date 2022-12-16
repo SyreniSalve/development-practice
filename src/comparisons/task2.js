@@ -1,6 +1,4 @@
-let a;
-const evenOrOddNumber = a % 2 ? false : true; 
-a = 4;
-console.log(evenOrOddNumber);
+let a = 4;
+console.log((a % 2 === 0) ? true : false);
 a = 5;
-console.log(evenOrOddNumber);
+console.log((a % 2 === 0) ? true : false);
