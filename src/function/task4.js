@@ -3,7 +3,8 @@ function binaryFn(a, b) {
 };
 
 function fn (a, b, c) {
-    return c = binaryFn(a, b);
+    c = binaryFn();
+    return binaryFn(a, b);
 };
 
-console.log(fn(3, 8));
+console.log(fn(3, 8, binaryFn(3, 8)));
