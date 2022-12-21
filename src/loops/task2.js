@@ -1,4 +1,4 @@
 const title = 'devMentor';
 for(let i = 0; i < title.length; i++) {
-    console.log(title.at(i));
+    console.log(title.at(i));  // title[i], title.charAt(i)
 };
