@@ -4,6 +4,6 @@ function stringFn () {
 
 const fn = () => stringFn();
 
-const fn2 = (p) => p;
+const fn2 = (p) => p();
 
-console.log(fn2(fn()));
+console.log(fn2(fn));
