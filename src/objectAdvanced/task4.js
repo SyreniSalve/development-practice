@@ -1,7 +1,5 @@
 const fn = (obj, field, value) => {
-    const updateObject = {...obj, field: value };
-    updateObject[`${field}`] = updateObject['field'];
-    delete updateObject['field'];
+    const updateObject = {...obj, [field]: value };
     return updateObject;
 }
 

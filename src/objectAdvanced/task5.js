@@ -8,9 +8,9 @@ const person = {
 const fn = (person) => {
     const fullName = `${person.name} ${person.surname}`;
     const nickname = `${person.surname}${person.age}`;
-    const updatedPerson = {...person, fullName: fullName, nickname: nickname};
-    delete updatedPerson.name, delete updatedPerson.surname, delete updatedPerson.age;
-    return updatedPerson;
+    person = {...person, fullName: fullName, nickname: nickname};
+    delete person.name, delete person.surname, delete person.age;
+    return person;
 };
 
 console.log(fn(person));

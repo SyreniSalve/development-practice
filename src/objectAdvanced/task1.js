@@ -3,6 +3,7 @@ const obj = {
     surname: 'Turcinas',
     age: 33
 };
+
 const objInformation = (obj) => {
     const {name, surname} = obj;
     console.log(`field title: name, value: ${name}\nfield title: surname, value: ${surname}`);
