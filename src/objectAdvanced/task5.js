@@ -8,8 +8,7 @@ const person = {
 const fn = (person) => {
     const fullName = `${person.name} ${person.surname}`;
     const nickname = `${person.surname}${person.age}`;
-    person = {...person, fullName: fullName, nickname: nickname};
-    delete person.name, delete person.surname, delete person.age;
+    person = {fullName: fullName, nickname: nickname, birthDate: person.birthDate};
     return person;
 };
 

@@ -5,8 +5,9 @@ const obj = {
 };
 
 const objInformation = (obj) => {
-    const {name, surname} = obj;
-    console.log(`field title: name, value: ${name}\nfield title: surname, value: ${surname}`);
+    for(let key in obj) {
+        console.log(`field title: ${key}, value: ${obj[key]}`);
+    };
 }
 
 const allfieldsKeys = (obj) => {
