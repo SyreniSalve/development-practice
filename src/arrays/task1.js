@@ -10,4 +10,6 @@ for(let a of arr){
     console.log(a);
 };
 
+arr.forEach(element => console.log(element));
+
 console.log(second);
