@@ -7,7 +7,7 @@ const people = [
     {name: 'Tomas', age: 19},
 ];
 
-const namesArr = (arr) => { return arr.map((a) => a.name)}
+const namesArr = (arr) => arr.map((a) => a.name);
 
 const getPeopleNamesCount = (arr) => {
     const allNamesArr = arr.map((a) => a.name);

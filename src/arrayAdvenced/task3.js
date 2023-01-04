@@ -5,9 +5,6 @@ const people = [
     {name: 'Audrius', age: 34}
 ];
 
-const getAdultPeopleNames = (arr) => {
-   const adultPeople = arr.filter((a) => a.age >= 18);
-   return adultPeople.map((p) => p.name);
-}
+const getAdultPeopleNames = (arr) => arr.filter((a) => a.age >= 18).map((p) => p.name);
 
 console.log(getAdultPeopleNames(people));
