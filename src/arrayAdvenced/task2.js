@@ -4,16 +4,6 @@ const objectArr = [{id: 4, name: 'Lecturer'},
 
 const numberArr = [1, 7, 3, 2, 10, 4];
 
-const removeObj = (arr, id) => {
-    const findObj = arr.findIndex((o) => o.id === id);
-    if(findObj > -1) arr.splice(findObj, 1);
-}; 
-
-const removeObjById = (objArr, numArr) => {
-    numArr.forEach(num => {
-        removeObj(objArr, num)
-    });
-    return objArr;
-};
+const removeObjById = (objArr, numArr) => objArr.filter((obj) => !numArr.includes(obj.id));
 
 console.log(removeObjById(objectArr, numberArr));
