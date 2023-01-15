@@ -4,6 +4,6 @@ const objectArr = [{id: 4, name: 'Lecturer'},
 
 const numberArr = [1, 7, 3, 2, 10, 4];
 
-const removeObjById = (objArr, numArr) => objArr.filter((obj) => !numArr.includes(obj.id));
+const removeObjById = (objArr, numArr) => objArr.filter(({ id }) => !numArr.includes(id))
 
 console.log(removeObjById(objectArr, numberArr));
