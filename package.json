@@ -4,6 +4,7 @@
   "description": "Practical work to master:\r - JavaScript\r - TypeScript\r - HTML\r - CSS\r - NodeJS, npm",
   "main": "index.js",
   "scripts": {
+    "prestart": "npx tsc",
     "start": "node --es-module-specifier-resolution=node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/SyreniSalve/development-practice/issues"
   },
-  "homepage": "https://github.com/SyreniSalve/development-practice#readme"
+  "homepage": "https://github.com/SyreniSalve/development-practice#readme",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
 }
