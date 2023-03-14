@@ -1,3 +1,3 @@
-const circleArea = (radius: number) => Math.PI * (radius ** 2);
+const circleArea = (radius: number): number => Math.PI * (radius ** 2);
 
 console.log(circleArea(2));
