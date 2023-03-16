@@ -4,6 +4,6 @@ enum Color {
   blue = "#0000FF",
 }
 
-const getColorHexCode = (color: Color) => color;
+const getColorHexCode = (color: Color): Color => color;
 
 console.log(getColorHexCode(Color.green));

@@ -14,11 +14,11 @@ enum Currencies {
     Yen = 108.75,
 }
 
-const whatDayToday = (day: Week) => `Today is ${day}`;
+const whatDayToday = (day: Week): string => `Today is ${day}`;
 
 console.log(whatDayToday(Week.Friday));
 
-const coverterInDollar = (amountOfMoney: number, currency: Currencies) => (amountOfMoney / currency).toFixed(2);
+const coverterInDollar = (amountOfMoney: number, currency: Currencies): string => (amountOfMoney / currency).toFixed(2);
 
 console.log(coverterInDollar(12, Currencies. Euros));
 
