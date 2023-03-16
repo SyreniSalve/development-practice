@@ -1,7 +1,7 @@
-const fn = (argument?: string) =>
+const fn = (argument?: string): number | null =>
   argument
-    ? argument.match(/[A-Z]/g)?.length !== undefined
-      ? argument.match(/[A-Z]/g)?.length
+    ? <number>argument.match(/[A-Z]/g)?.length !== undefined
+      ? <number>argument.match(/[A-Z]/g)?.length
       : 0
     : null;
 
