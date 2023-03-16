@@ -12,9 +12,13 @@ const movies = [
   { title: "King Kong", releaseYear: 1933, rating: 4 },
 ];
 
-const movesSortedByReleaseYear = (movies: Movie[]) => {
-  const reverseListSortedByRating = movies.sort((m1, m2) => m1.rating - m2.rating).reverse();
-  return reverseListSortedByRating.sort((mo1, mo2) => mo1.releaseYear - mo2.releaseYear);
+const movesSortedByReleaseYear = (movies: Movie[]): Movie[] => {
+  const reverseListSortedByRating = movies
+    .sort((m1, m2) => m1.rating - m2.rating)
+    .reverse();
+  return reverseListSortedByRating.sort(
+    (mo1, mo2) => mo1.releaseYear - mo2.releaseYear
+  );
 };
 
 console.log(movesSortedByReleaseYear(movies));

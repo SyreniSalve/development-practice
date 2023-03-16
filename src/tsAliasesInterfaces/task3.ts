@@ -16,9 +16,15 @@ const recipes: Recipe[] = [
   { name: "Jelly", ingredients: ["gelatin", "juice", "sugar", "cream"] },
 ];
 
-const longestListOfIngredients = (recipes: Recipe[]) => {
+const longestListOfIngredients = (recipes: Recipe[]): Recipe => {
   const longestList = Math.max(...recipes.map((r) => r.ingredients.length));
-  return recipes.find((r) => r.ingredients.length === longestList);
+  return <Recipe>(
+    recipes.find((r) =>
+      recipes !== undefined
+        ? r.ingredients.length === longestList
+        : "list is empty."
+    )
+  );
 };
 
 console.log(longestListOfIngredients(recipes));
