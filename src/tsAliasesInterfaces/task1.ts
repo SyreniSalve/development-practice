@@ -11,8 +11,9 @@ const arrOfCars: Car[] = [
 ];
 
 const findOldestCar = (carArray: Car[]): string => {
-  const oldestCar = Math.min(...carArray.map((car) => car.year));
-  const car = carArray.find((car) => car.year === oldestCar);
+  const car = carArray.reduce((car1, car2) =>
+    car1.year < car2.year ? car1 : car2
+  );
   return `${car?.make} ${car?.model}`;
 };
 

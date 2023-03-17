@@ -5,20 +5,18 @@ type Movie = {
 };
 
 const movies = [
+  { title: "Jesus Revolution", releaseYear: 2023, rating: 8 },
   { title: "Silence", releaseYear: 2016, rating: 10 },
   { title: "Triangle of Sadness", releaseYear: 2022, rating: 7 },
-  { title: "The Whale", releaseYear: 2022, rating: 8 },
-  { title: "Jesus Revolution", releaseYear: 2023, rating: 8 },
   { title: "King Kong", releaseYear: 1933, rating: 4 },
+  { title: "The Whale", releaseYear: 2022, rating: 8 },
 ];
 
-const movesSortedByReleaseYear = (movies: Movie[]): Movie[] => {
-  const reverseListSortedByRating = movies
-    .sort((m1, m2) => m1.rating - m2.rating)
-    .reverse();
-  return reverseListSortedByRating.sort(
-    (mo1, mo2) => mo1.releaseYear - mo2.releaseYear
+const movesSortedByReleaseYear = (movies: Movie[]): Movie[] =>
+  movies.sort((m1, m2) =>
+    m1.releaseYear !== m2.releaseYear
+      ? m1.releaseYear - m2.releaseYear
+      : m2.rating - m1.rating
   );
-};
 
 console.log(movesSortedByReleaseYear(movies));
