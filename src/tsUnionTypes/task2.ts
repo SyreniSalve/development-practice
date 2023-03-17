@@ -1,9 +1,6 @@
-const fn = (argument?: string): number | null =>
-  argument
-    ? <number>argument.match(/[A-Z]/g)?.length !== undefined
-      ? <number>argument.match(/[A-Z]/g)?.length
-      : 0
-    : null;
+const fn = (argument?: string): number =>
+  argument?.match(/[A-Z]/g)?.length || 0
+  
 
 console.log(fn("devMentor"));
 console.log(fn());
