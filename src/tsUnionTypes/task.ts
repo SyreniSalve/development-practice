@@ -1,9 +1,9 @@
-let something: string | number;
+let some: string | number;
 
-something = "devMentor";
+some = "devMentor";
 
-console.log(something);
+console.log(some);
 
-something = 10;
+some= 10;
 
-console.log(something);
+console.log(some);
